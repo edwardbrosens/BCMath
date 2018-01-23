@@ -23,7 +23,9 @@ class BCMathTest extends PHPUnit\Framework\TestCase {
     /**
      * Should support bcmul()
      */
-    public function testShouldSupportBcmul() {}
+    public function testShouldSupportBcmul() {
+        $this->assertEquals(bcmul(1, 2), BCMath::mul(1, 2));
+    }
 
     /**
      * Should support bcdiv()
