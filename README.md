@@ -27,7 +27,7 @@ BCMath works with at least PHP 5.6 and HHVM.
 ```php
 require __DIR__ . '/vendor/autoload.php';
 
-use \BCMath/BCMath;
+use \BCMath\BCMath;
 
 // Add two arbitrary precision numbers
 $a = BCMath::add(1, 2); // ($a = 3)
