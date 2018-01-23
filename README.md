@@ -37,10 +37,16 @@ $b = BCMath::sub(2, 1); // ($b = 1)
 
 ### Available Methods
 ```php
-BCMath::add($left_operand, $right_operand, $scale = null) // Add two arbitrary precision numbers
-BCMath::sub($left_operand, $right_operand, $scale = null) // Subtract two arbitrary precision numbers
-BCMath::mul($left_operand, $right_operand, $scale = null) // Multiply two arbitrary precision numbers
-BCMath::div($left_operand, $right_operand, $scale = null) // Divide two arbitrary precision numbers```
+BCMath::add($left_operand, $right_operand, $scale = null); // Add two arbitrary precision numbers
+BCMath::sub($left_operand, $right_operand, $scale = null); // Subtract two arbitrary precision numbers
+BCMath::mul($left_operand, $right_operand, $scale = null); // Multiply two arbitrary precision numbers
+BCMath::div($left_operand, $right_operand, $scale = null); // Divide two arbitrary precision numbers
+BCMath::mod($left_operand, $modulus); // Get modulus of an arbitrary precision number
+BCMath::pow($left_operand, $right_operand, $scale = null); // Raise an arbitrary precision number to another
+BCMath::sqrt($operand, $scale = null); // Get the square root of an arbitrary precision number
+BCMath::scale ($scale); // Set default scale parameter for all BCMath and bcmath functions
+BCMath::comp($left_operand, $right_operand, $scale = null); // Compare two arbitrary precision numbers
+BCMath::powmod($left_operand, $right_operand, $modulus, $scale = null); // Raise an arbitrary precision number to another, reduced by a specified modulus
 ```
 
 ### Run Tests
