@@ -1,5 +1,5 @@
 {
-  "name": "edwardbrosens/bcmatch",
+  "name": "edwardbrosens/bcmath",
   "description": "Convenience wrapper for the php bcmath extension.",
   "homepage": "https://github.com/edwardbrosens/BCMath",
   "license": "MIT",
