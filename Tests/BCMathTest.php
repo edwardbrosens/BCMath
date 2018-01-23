@@ -56,17 +56,10 @@ class BCMathTest extends PHPUnit\Framework\TestCase {
     }
 
     /**
-     * Should support bcscale()
-     */
-    public function testShouldSupportBcscale() {
-        $this->assertTrue(BCMath::scale(2));
-    }
-
-    /**
      * Should support bccomp()
      */
     public function testShouldSupportBccomp() {
-        $this->assertEquals(bccomp(3, 3, BCMath::comp(3, 3)));
+        $this->assertEquals(bccomp(3, 3), BCMath::comp(3, 3));
     }
 
     /**
@@ -74,6 +67,13 @@ class BCMathTest extends PHPUnit\Framework\TestCase {
      */
     public function testShouldSupportBcpowmod() {
         $this->assertEquals(bcpowmod(5, 2, 2), BCMath::powmod(5, 2, 2));
+    }
+
+    /**
+     * Should support bcscale()
+     */
+    public function testShouldSupportBcscale() {
+        $this->assertTrue(BCMath::scale(2));
     }
 
 }
