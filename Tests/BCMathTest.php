@@ -30,5 +30,7 @@ class BCMathTest extends PHPUnit\Framework\TestCase {
     /**
      * Should support bcdiv()
      */
-    public function testShouldSupportBcdiv() {}
+    public function testShouldSupportBcdiv() {
+        $this->assertEquals(bcdiv(2,2), BCMath::div(2,2));
+    }
 }
