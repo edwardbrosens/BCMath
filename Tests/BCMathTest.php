@@ -16,7 +16,9 @@ class BCMathTest extends PHPUnit\Framework\TestCase {
     /**
      * Should support bcsub()
      */
-    public function testShouldSupportBcsub() {}
+    public function testShouldSupportBcsub() {
+        $this->assertEquals(bcsub(2, 1), BCMath::sub(2, 1));
+    }
 
     /**
      * Should support bcmul()
