@@ -10,6 +10,7 @@ class BCMathTest extends PHPUnit\Framework\TestCase {
      * Should support bcadd()
      */
     public function testShouldSupportBcadd () {
+        $this->assertEquals(bcadd(1, 2), BCMath::add(1,2));
     }
 
     /**
