@@ -3,7 +3,6 @@
   "description": "Convenience wrapper for the php bcmath extension.",
   "homepage": "https://github.com/edwardbrosens/BCMath",
   "license": "MIT",
-  "version": "dev-master",
   "keywords": [
     "php", "bcmath", "arbitrary-precision", "class"
   ],
