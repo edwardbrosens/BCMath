@@ -33,4 +33,47 @@ class BCMathTest extends PHPUnit\Framework\TestCase {
     public function testShouldSupportBcdiv() {
         $this->assertEquals(bcdiv(2,2), BCMath::div(2,2));
     }
+
+    /**
+     * Should support bcmod()
+     */
+    public function testShouldSupportBcmod() {
+        $this->assertEquals(bcmod(2, 4), BCMath::mod(2, 4));
+    }
+
+    /**
+     * Should support bcpow()
+     */
+    public function testShouldSupportBcpow() {
+        $this->assertEquals(bcpow(4, 3), BCMath::pow(4, 3));
+    }
+
+    /**
+     * Should support bcsqrt()
+     */
+    public function testShouldSupportBcsqrt() {
+        $this->assertEquals(bcsqrt(144), BCMath::sqrt(144));
+    }
+
+    /**
+     * Should support bcscale()
+     */
+    public function testShouldSupportBcscale() {
+        $this->assertTrue(BCMath::scale(2));
+    }
+
+    /**
+     * Should support bccomp()
+     */
+    public function testShouldSupportBccomp() {
+        $this->assertEquals(bccomp(3, 3, BCMath::comp(3, 3)));
+    }
+
+    /**
+     * Should support bcpowmod()
+     */
+    public function testShouldSupportBcpowmod() {
+        $this->assertEquals(bcpowmod(5, 2, 2), BCMath::powmod(5, 2, 2));
+    }
+
 }
